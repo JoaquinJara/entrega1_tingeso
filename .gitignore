@@ -1,4 +1,5 @@
 target/
+src/main/resources/application.properties
 target/classes/META-INF/MANIFEST.MF
 !.mvn/wrapper/maven-wrapper.jar
 
