@@ -15,8 +15,6 @@ public class Alumno {
 	
 	private String email;
 	
-	@ManyToOne
-    @JoinColumn(name = "carrera_id")
     private String carrera;
 	
 	private long ingreso;
