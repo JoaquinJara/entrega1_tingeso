@@ -19,6 +19,8 @@ public class Alumno {
 	
 	private long ingreso;
 	
+	private String rut;
+	
 	public long getAlumnoId(){
 		return alumnoId;
 	}
@@ -58,6 +60,15 @@ public class Alumno {
 	public void setIngreso(long ingreso){
 		this.ingreso = ingreso;
 	}
+	
+	public String getRut(){
+		return rut;
+	}
+	
+	public void setRut(String rut){
+		this.rut = rut;
+	}
+	
 	
 	public Alumno() {
 	}
