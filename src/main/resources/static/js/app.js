@@ -1,18 +1,14 @@
-var app = angular.module('pokemon',['ngRoute']);
+var app = angular.module('Proyecto Tingeso',['ngRoute']);
 
 app.config(function($routeProvider){
     $routeProvider
-        .when('/types',{
-            templateUrl: 'js/views/pokemonType.html',
-            controller: 'PokemonTypeController'
+        .when('/alumnos',{
+            templateUrl: 'js/views/alumnos.html',
+            controller: 'alumnoController'
         })
-        .when('/pokemon',{
-            templateUrl: 'js/views/pokemon.html',
-            controller: 'PokemonController'
-        })
-        .when('/movements',{
-            templateUrl: 'js/views/pokemonMovement.html',
-            controller: 'PokemonMovementController'
+        .when('/registrar',{
+            templateUrl: 'js/views/registro.html',
+            controller: 'registroController'
         })
         .otherwise({
             redirectTo: '/index'

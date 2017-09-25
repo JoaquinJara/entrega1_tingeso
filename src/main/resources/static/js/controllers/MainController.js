@@ -1,15 +1,13 @@
 app.controller('MainController', ['$scope','$location', function($scope,$location) {
 
-	$scope.title = "Ejemplo de pokemon";
+	$scope.title = "Proyecto Tingeso";
 
-    $scope.typePage = $location.path() === '/types';
-    $scope.pokemonPage = $location.path() === '/pokemon';
-    $scope.movementPage = $location.path() === '/movements';
+    $scope.alumnoPage = $location.path() === '/alumnos';
+    $scope.registroPage = $location.path() === '/registrar';
 
 	$scope.navigation = [
-	{"text":"Ver tipos",   "link":"#!/types", "condition":$scope.typePage},
-	{"text":"Ver pokemon",   "link":"#!/pokemon", "condition":$scope.pokemonPage},
-	{"text":"Ver movimientos", "link":"#!/movements", "condition":$scope.movementPage}
+	{"text":"Lista de alumnos",   "link":"#!/alumnos", "condition":$scope.alumnoPage},
+	{"text":"Ingresar alumno",   "link":"#!/registrar", "condition":$scope.registroPage},
 	];
 
 }]);
