@@ -1,16 +1,45 @@
+
 package com.example.entrega1_tingeso;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import static org.junit.Assert.*;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+
 public class Entrega1TingesoApplicationTests {
+    
+    public Entrega1TingesoApplicationTests() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
 
-	@Test
-	public void contextLoads() {
-	}
-
+    /**
+     * Test of main method, of class StudentSpringApplication.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = new String[] {"foo", "baz", "bar"};
+        Entrega1TingesoApplication.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+      
+    }
+    
 }
