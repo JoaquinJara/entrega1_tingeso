@@ -13,7 +13,6 @@ app.controller('registerController', ['$scope','$http', function($scope,$http) {
         }
     }
 
-   $scope.resetNewStudent();
    
    $scope.send = function(){
         console.log($scope.newStudent);
