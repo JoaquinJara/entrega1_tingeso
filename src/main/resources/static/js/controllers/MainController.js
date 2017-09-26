@@ -2,12 +2,12 @@ app.controller('MainController', ['$scope','$location', function($scope,$locatio
 
 	$scope.title = "Proyecto Tingeso";
 
-    $scope.alumnoPage = $location.path() === '/alumnos';
-    $scope.registroPage = $location.path() === '/registrar';
+    $scope.studentPage = $location.path() === '/students';
+    $scope.registerPage = $location.path() === '/register';
 
 	$scope.navigation = [
-	{"text":"Lista de alumnos",   "link":"#!/alumnos", "condition":$scope.alumnoPage},
-	{"text":"Ingresar alumno",   "link":"#!/registrar", "condition":$scope.registroPage},
+	{"text":"Lista de alumnos",   "link":"#!/students", "condition":$scope.studentPage},
+	{"text":"Ingresar alumno",   "link":"#!/register", "condition":$scope.registerPage},
 	];
 
 }]);

@@ -2,13 +2,13 @@ var app = angular.module('Proyecto Tingeso',['ngRoute']);
 
 app.config(function($routeProvider){
     $routeProvider
-        .when('/alumnos',{
-            templateUrl: 'js/views/alumnos.html',
-            controller: 'alumnoController'
+        .when('/students',{
+            templateUrl: 'js/views/student.html',
+            controller: 'studentController'
         })
-        .when('/registrar',{
-            templateUrl: 'js/views/registro.html',
-            controller: 'registroController'
+        .when('/register',{
+            templateUrl: 'js/views/register.html',
+            controller: 'registerController'
         })
         .otherwise({
             redirectTo: '/index'

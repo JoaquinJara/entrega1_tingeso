@@ -4,29 +4,29 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "alumnos")
-public class Alumno {
+@Table(name = "student")
+public class Student {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long alumnoId;
+    private long studentId;
 	
 	private String name;
 	
 	private String email;
 	
-    private String carrera;
+    private String career;
 	
-	private long ingreso;
+	private long entry;
 	
 	private String rut;
 	
-	public long getAlumnoId(){
-		return alumnoId;
+	public long getStudentId(){
+		return studentId;
 	}
 	
-	public void setAlumnoId(long alumnoId){
-		this.alumnoId = alumnoId;
+	public void setStudentId(long studentId){
+		this.studentId = studentId;
 	}
 	
 	public String getName(){
@@ -45,20 +45,20 @@ public class Alumno {
 		this.email = email;
 	}
 	
-	public String getCarrera(){
-		return carrera;
+	public String getCareer(){
+		return career;
 	}
 	
-	public void serCarrera (String carrera){
-		this.carrera = carrera;
+	public void serCareer (String career){
+		this.career = career;
 	}
 	
-	public long getIngreso(){
-		return ingreso;
+	public long getEntry(){
+		return entry;
 	}
 	
-	public void setIngreso(long ingreso){
-		this.ingreso = ingreso;
+	public void setEntry(long entry){
+		this.entry = entry;
 	}
 	
 	public String getRut(){
@@ -70,6 +70,6 @@ public class Alumno {
 	}
 	
 	
-	public Alumno() {
+	public Student() {
 	}
 }
